@@ -1,9 +1,9 @@
 'use client';
 
 const FOCUS = [
-  'Full-stack & Agentic AI at BrandScaling',
-  'Adminless (UK) development',
-  'Scaling prototypes to production',
+  'Agentic AI & AI engineering at BrandScaling',
+  'Multi-LLM systems, RAG, and ML pipelines',
+  'Scaling AI prototypes to production',
 ];
 
 export function About() {
@@ -16,10 +16,10 @@ export function About() {
               About me
             </h2>
             <p className="text-zinc-400 leading-relaxed mb-4 text-sm sm:text-base">
-              I build products that ship. From idea to working prototype in days: SaaS dashboards, CRM-connected flows, and AI-powered tools. I use Cursor, Lovable, and modern stacks so engineers get a solid foundation to scale and secure.
+              I build AI systems that ship. Agentic AI, RAG pipelines, multi-LLM routing, and ML tooling—from research to production. I focus on grounding models in data, safe deployment, and clear evaluation so products are reliable and scalable.
             </p>
             <p className="text-zinc-400 leading-relaxed text-sm sm:text-base">
-              I lead full-stack and agentic AI work at BrandScaling and Adminless (UK). Based in Rawalpindi.
+              I lead AI engineering and agentic AI work at BrandScaling; I also do full-stack and automation work. Based in Rawalpindi.
             </p>
           </div>
           <div className="rounded-xl bg-gradient-to-br from-orange-900/40 to-amber-900/40 border border-zinc-700/50 p-4 sm:p-6">

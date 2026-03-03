@@ -47,7 +47,7 @@ export function Hero() {
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 pt-12">
                   <p className="text-white font-semibold">Nuzhat Rubab Zahra</p>
-                  <p className="text-zinc-300 text-sm">Vibe Coder & AI-Assisted Full-Stack</p>
+                  <p className="text-zinc-300 text-sm">AI Engineer</p>
                 </div>
               </div>
             </div>
@@ -60,10 +60,10 @@ export function Hero() {
               <span className="text-zinc-400 text-sm font-medium">Available for new projects</span>
             </div>
             <h1 className="font-display text-3xl min-[480px]:text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-[1.15] tracking-tight">
-              Building products that <span className="text-gradient">ship.</span>
+              Building AI systems that <span className="text-gradient">ship.</span>
             </h1>
             <p className="mt-4 sm:mt-6 text-zinc-400 text-base sm:text-lg leading-relaxed">
-              Full-stack and AI-assisted development—from idea to working prototype in days. SaaS dashboards, CRM flows, and AI tools that scale.
+              Agentic AI, RAG, multi-LLM systems, and ML pipelines—from research to production. I design and ship AI products that scale.
             </p>
             <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4">
               <a

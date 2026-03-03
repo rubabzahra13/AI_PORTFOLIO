@@ -2,8 +2,12 @@
 
 const SKILL_GROUPS = [
   {
-    label: 'Vibe coding / AI-assisted dev',
-    tools: ['Cursor', 'Claude Code', 'Lovable', 'Replit', 'Rapid prototyping', 'Prompt engineering', 'AI-augmented workflows'],
+    label: 'AI engineering',
+    tools: ['Prompt engineering', 'RAG', 'Multi-LLM routing', 'LangChain', 'Evaluation', 'Cursor', 'Rapid prototyping'],
+  },
+  {
+    label: 'Agentic AI',
+    tools: ['AI agents', 'Tool use', 'Multi-step reasoning', 'Autonomous workflows', 'Orchestration', 'Reasoning loops'],
   },
   {
     label: 'Frontend',
@@ -27,30 +31,30 @@ const SKILL_GROUPS = [
   },
   {
     label: 'CRM / automation',
-    tools: ['GoHighLevel (GHL)', 'Lifecycle triggers', 'Notification workflows'],
+    tools: ['GoHighLevel (GHL)', 'n8n', 'EC2', 'Lifecycle triggers', 'Notification workflows'],
   },
 ];
 
 const EXECUTION = [
   {
     title: 'Speed',
-    line: 'Built Care Property Hub end-to-end in 11 days with Cursor—frontend, backend, auth, PostgreSQL, GHL webhooks, AWS deployment.',
+    line: 'Ship agentic and RAG systems from idea to deployable API; iterate on evals and prompts in tight loops.',
   },
   {
     title: 'Rapid prototyping',
-    line: 'Portfolio and live demos aligned to role requirements; demo-first execution.',
+    line: 'AI demos and live pipelines aligned to product goals; experiment-first, then harden for production.',
   },
   {
     title: 'Autonomy',
-    line: 'Designed backend architecture, data models, Supabase RLS, JWT flows, and AWS deployment strategy across SaaS systems.',
+    line: 'Design data pipelines, model routing, and evaluation so AI systems are measurable and maintainable.',
   },
   {
     title: 'Collaboration',
-    line: 'Coordinated with AWS engineer, GHL specialist, iOS developer; daily PM reporting and iterative demos.',
+    line: 'Work with product, infra, and other engineers; clear APIs and docs so AI components integrate cleanly.',
   },
   {
-    title: 'Demo-driven iteration',
-    line: 'Functional MVPs over docs; live feature updates in stakeholder sessions, including 10‑minute automation builds from feedback.',
+    title: 'Evaluation-driven iteration',
+    line: 'Improve on evals and user feedback; version prompts and models with clear baselines.',
   },
 ];
 
@@ -62,7 +66,7 @@ export function Skills() {
           Skills &amp; execution
         </h2>
         <p className="text-zinc-400 text-sm sm:text-base mb-12 max-w-2xl">
-          Technical stack and how I ship: tools, GenAI, and execution style.
+          Technical stack and how I ship: AI/ML tools, GenAI, and execution style.
         </p>
 
         {/* Technical skills: category cards with pill tags */}

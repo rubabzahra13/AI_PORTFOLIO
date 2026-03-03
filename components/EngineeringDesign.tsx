@@ -2,7 +2,7 @@
 
 const SERVICES = [
   {
-    title: 'Full-Stack Dev',
+    title: 'Agentic AI',
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
@@ -10,7 +10,7 @@ const SERVICES = [
     ),
   },
   {
-    title: 'AI Integration',
+    title: 'RAG & Multi-LLM',
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -43,7 +43,7 @@ export function EngineeringDesign() {
           Engineering &amp; Design
         </h2>
         <p className="text-zinc-400 max-w-2xl mb-10 sm:mb-14 text-sm sm:text-base">
-          I combine technical depth with design sensibility to build complete products. Not just slides—live demos and production-ready code.
+          I combine AI/ML depth with systems thinking to build production AI. Not just demos—evaluated models, clear APIs, and deployable pipelines.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {SERVICES.map((s) => (

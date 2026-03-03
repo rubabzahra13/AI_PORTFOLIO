@@ -17,12 +17,12 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Nuzhat Rubab Zahra | AI-Assisted Full-Stack & Vibe Coding',
+  title: 'Nuzhat Rubab Zahra | AI Engineer',
   description:
-    'Portfolio of Nuzhat Rubab Zahra — Vibe Coder & AI-Assisted Full-Stack Developer. React, Next.js, Cursor, Lovable. SaaS dashboards, CRM integrations, rapid prototypes.',
+    'Portfolio of Nuzhat Rubab Zahra — AI Engineer. Agentic AI, RAG, multi-LLM systems, ML pipelines. Full-stack and automations in separate showcase.',
   openGraph: {
-    title: 'Nuzhat Rubab Zahra | Vibe Coder & Full-Stack Developer',
-    description: 'Portfolio: Care Property Hub, AI-Alchemist, Content Strategy Agent. Shipping production-ready foundations in days.',
+    title: 'Nuzhat Rubab Zahra | AI Engineer',
+    description: 'AI Engineer portfolio: agentic AI, RAG, multi-LLM systems. AI-Alchemist, Content Strategy Agent, Video Transcription. Production AI that ships.',
   },
 };
 

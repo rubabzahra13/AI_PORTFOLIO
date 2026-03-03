@@ -1,6 +1,6 @@
 # Nuzhat Rubab Zahra — Portfolio
 
-Modern, clean portfolio site to showcase **vibe coding** and AI-assisted full-stack work (Care Property Hub, AI Alchemist, Content Strategist, PPF For Humanity). Built with **Next.js 14**, **Tailwind CSS**, and aligned with roles like 10Pearls Vibe Coder / AI-Assisted Full-Stack Developer.
+Modern, clean portfolio site positioning as **AI Engineer**: agentic AI, RAG, multi-LLM systems, and ML pipelines. Main showcase is AI engineering work; full-stack, automations, and other projects are in a separate “Other work” section at the bottom. Built with **Next.js 14** and **Tailwind CSS**.
 
 ## Run locally
 

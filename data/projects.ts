@@ -1,8 +1,11 @@
 import type { ProjectDetailData } from '@/components/ProjectDetail';
 
-export const PROJECTS_FEATURED: (ProjectDetailData & { tags: string[] })[] = [
+export type ShowcaseCategory = 'ai-engineer' | 'other';
+
+export const PROJECTS_FEATURED: (ProjectDetailData & { tags: string[]; showcase: ShowcaseCategory })[] = [
   {
     id: 'care-property-hub',
+    showcase: 'other',
     name: 'Care Property Hub',
     tagline: 'TypeScript, React, Express.js, PostgreSQL (Supabase), AWS (Dec 2025 – Present)',
     description: 'Full-stack matching platform connecting UK care providers with landlords, including maps, documents, bookings, and dashboards. Built in 11 days with Cursor; production-ready foundation for future scaling.',
@@ -48,6 +51,7 @@ export const PROJECTS_FEATURED: (ProjectDetailData & { tags: string[] })[] = [
   },
   {
     id: 'ai-alchemist',
+    showcase: 'ai-engineer',
     name: 'AI-Alchemist',
     tagline: 'Psychology-driven decision support agent — Multi-LLM, NestJS, Node.js, Supabase, AWS (Sep 2025)',
     description: 'Agentic AI system for emotional support, behavioral insights, and decision guidance. Multi-model routing (OpenAI, Claude, DeepSeek, Gemini) and full-stack deployment with iOS companion.',
@@ -70,6 +74,7 @@ export const PROJECTS_FEATURED: (ProjectDetailData & { tags: string[] })[] = [
   },
   {
     id: 'content-strategist',
+    showcase: 'ai-engineer',
     name: 'AI Content Strategist Agent',
     tagline: 'Python, RAG, Web/PDF ingestion (Jul 2025)',
     description: 'Multimodal content strategy agent that ingests websites and PDFs to learn brand identity, products, and target audiences.',
@@ -90,6 +95,7 @@ export const PROJECTS_FEATURED: (ProjectDetailData & { tags: string[] })[] = [
   },
   {
     id: 'ppf-website',
+    showcase: 'other',
     name: 'PPF For Humanity',
     tagline: 'Non-profit solidarity & advocacy — React, Tailwind, Figma',
     description: 'Full-site for Pak-Palestine Forum: mission pillars (Solidarity, Relief & Aid, Advocacy), impact stats, volunteer and donate flows, interactive "Where We Exist" map, FAQ accordion, contact form, and an in-app assistant for common questions.',
@@ -113,6 +119,7 @@ export const PROJECTS_FEATURED: (ProjectDetailData & { tags: string[] })[] = [
   },
   {
     id: 'video-transcription',
+    showcase: 'ai-engineer',
     name: 'Video Transcription System',
     tagline: 'OpenAI Whisper, Python (Jul 2025)',
     description: 'Scalable transcription with queued processing to handle multiple long-form videos concurrently; designed for reliability and throughput.',
@@ -130,6 +137,7 @@ export const PROJECTS_FEATURED: (ProjectDetailData & { tags: string[] })[] = [
   },
   {
     id: 'zoom-summaries-downloader',
+    showcase: 'other',
     name: 'Zoom Summaries Bulk Downloader',
     tagline: 'Python, Playwright, Chrome Extension (Jul 2025)',
     description: 'Automated multi-page Zoom navigation to export meeting summaries into Word docs; reduced team workflow time by 90%.',
@@ -146,7 +154,8 @@ export const PROJECTS_FEATURED: (ProjectDetailData & { tags: string[] })[] = [
   },
   {
     id: 'ecommerce-mvp',
-    name: 'E-commerce Store Prototypes & MVP (Vibe-Coded)',
+    showcase: 'other',
+    name: 'E-commerce Store Prototypes & MVP',
     tagline: 'Lovable, Cursor, full-stack (2025)',
     heroImage: '/images/nexus/photo-1598775378121-e24f7062c151.avif',
     description: 'Initial store prototypes with Lovable, iterated into functional flows with Cursor; UX-driven pages, conversion-oriented UI, quick iteration from feedback.',
@@ -154,7 +163,7 @@ export const PROJECTS_FEATURED: (ProjectDetailData & { tags: string[] })[] = [
       'Built initial store prototypes using Lovable and iterated into functional flows using Cursor for rapid delivery.',
       'Focused on UX-driven pages, conversion-oriented UI, and quick iteration cycles based on feedback.',
     ],
-    tech: ['Lovable', 'Cursor', 'Full-stack', 'UX', 'Vibe coding'],
+    tech: ['Lovable', 'Cursor', 'Full-stack', 'UX'],
     links: [
       { label: 'Live Demo', href: 'https://nexus-ecommerce-two.vercel.app?_vercel_share=YOfHWqWXbjoYjFiskBHZXYf4KSaFRW7x' },
     ],
@@ -162,10 +171,11 @@ export const PROJECTS_FEATURED: (ProjectDetailData & { tags: string[] })[] = [
     cardImage: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80',
     cardImagePosition: 'object-center',
     gradient: 'from-emerald-600 to-teal-700',
-    tags: ['E-commerce', 'Vibe coding', 'MVP'],
+    tags: ['E-commerce', 'MVP'],
   },
   {
     id: 'image-to-forms-automation',
+    showcase: 'other',
     name: 'Image-to-Google-Forms Automation',
     tagline: 'Automation, Cursor (2025)',
     description: 'Automation to convert form images into structured Google Forms, reducing manual data entry and setup time.',
@@ -182,22 +192,26 @@ export const PROJECTS_FEATURED: (ProjectDetailData & { tags: string[] })[] = [
   },
   {
     id: 'portfolio-3d-mascot',
-    name: 'Portfolio MVPs + 3D Mascot (Vibe-Coded)',
+    showcase: 'other',
+    name: 'Portfolio MVPs + 3D Mascot',
     tagline: 'Cursor, 3D web assets (2025)',
-    description: 'Multiple portfolio MVP prototypes end-to-end via vibe coding; shipped demo-ready iterations instead of heavy documentation. Interactive 3D mascot integrated into the portfolio experience.',
+    description: 'Multiple portfolio MVP prototypes end-to-end; shipped demo-ready iterations. Interactive 3D mascot integrated into the portfolio experience.',
     points: [
-      'Created multiple portfolio MVP prototypes end-to-end via vibe coding; shipped demo-ready iterations instead of heavy documentation.',
-      'Vibe-coded an interactive 3D mascot and integrated it into the portfolio experience.',
+      'Created multiple portfolio MVP prototypes end-to-end; shipped demo-ready iterations instead of heavy documentation.',
+      'Built an interactive 3D mascot and integrated it into the portfolio experience.',
     ],
-    tech: ['Cursor', '3D', 'Vibe coding', 'Web', '3D web assets'],
+    tech: ['Cursor', '3D', 'Web', '3D web assets'],
     links: [],
     images: [],
     cardImage: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&q=80',
     cardImagePosition: 'object-center',
     gradient: 'from-fuchsia-600 to-pink-600',
-    tags: ['Portfolio', '3D', 'Vibe coding'],
+    tags: ['Portfolio', '3D'],
   },
 ];
+
+export const PROJECTS_AI_ENGINEER = PROJECTS_FEATURED.filter((p) => p.showcase === 'ai-engineer');
+export const PROJECTS_OTHER = PROJECTS_FEATURED.filter((p) => p.showcase === 'other');
 
 export function getProjectById(id: string): (ProjectDetailData & { tags: string[] }) | undefined {
   return PROJECTS_FEATURED.find((p) => p.id === id);
