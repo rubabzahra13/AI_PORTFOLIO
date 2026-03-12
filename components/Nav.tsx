@@ -22,8 +22,10 @@ export function Nav() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 ${
-        scrolled ? 'bg-[#0f0f14]/95 backdrop-blur-md border-b border-zinc-800' : 'bg-transparent'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? 'bg-[#0a0a10]/80 backdrop-blur-xl border-b border-white/[0.06] shadow-[0_4px_30px_rgba(0,0,0,0.3)]'
+          : 'bg-transparent'
       }`}
     >
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
@@ -39,7 +41,7 @@ export function Nav() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="text-sm font-medium text-zinc-400 hover:text-white transition-colors"
+                className="nav-link text-sm font-medium text-zinc-400 hover:text-white transition-colors"
               >
                 {link.label}
               </Link>
@@ -64,13 +66,13 @@ export function Nav() {
       </nav>
 
       {mobileOpen && (
-        <div className="md:hidden bg-[#18181f] border-t border-zinc-800 px-4 sm:px-6 py-4">
+        <div className="md:hidden bg-[#0a0a10]/95 backdrop-blur-xl border-t border-white/[0.06] px-4 sm:px-6 py-4">
           <ul className="flex flex-col gap-3">
             {LINKS.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="block py-2 text-zinc-400 hover:text-white font-medium"
+                  className="block py-2 text-zinc-400 hover:text-white font-medium transition-colors"
                   onClick={() => setMobileOpen(false)}
                 >
                   {link.label}

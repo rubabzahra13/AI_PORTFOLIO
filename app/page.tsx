@@ -14,13 +14,13 @@ export default function Home() {
     <>
       <Hero />
       <TechStrip />
-      <Reveal><EngineeringDesign /></Reveal>
-      <Reveal><Projects /></Reveal>
-      <Reveal><About /></Reveal>
-      <Reveal><Experience /></Reveal>
-      <Reveal><Skills /></Reveal>
-      <Reveal><Resume /></Reveal>
-      <Reveal><Contact /></Reveal>
+      <Reveal variant="up"><EngineeringDesign /></Reveal>
+      <Reveal variant="left"><Projects /></Reveal>
+      <Reveal variant="right"><About /></Reveal>
+      <Reveal variant="scale"><Experience /></Reveal>
+      <Reveal variant="left"><Skills /></Reveal>
+      <Reveal variant="blur"><Resume /></Reveal>
+      <Reveal variant="up"><Contact /></Reveal>
     </>
   );
 }

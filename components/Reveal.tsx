@@ -2,7 +2,14 @@
 
 import { useEffect, useRef, ReactNode } from 'react';
 
-export function Reveal({ children }: { children: ReactNode }) {
+export type RevealVariant = 'up' | 'left' | 'right' | 'scale' | 'blur';
+
+type Props = {
+  children: ReactNode;
+  variant?: RevealVariant;
+};
+
+export function Reveal({ children, variant = 'up' }: Props) {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -14,14 +21,16 @@ export function Reveal({ children }: { children: ReactNode }) {
           if (entry.isIntersecting) entry.target.classList.add('revealed');
         });
       },
-      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+      { threshold: 0.08, rootMargin: '0px 0px -50px 0px' }
     );
     observer.observe(el);
     return () => observer.disconnect();
   }, []);
 
+  const variantClass = variant === 'up' ? 'reveal-up' : `reveal-${variant}`;
+
   return (
-    <div ref={ref} className="reveal">
+    <div ref={ref} className={`reveal ${variantClass}`}>
       {children}
     </div>
   );

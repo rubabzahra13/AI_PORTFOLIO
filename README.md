@@ -1,4 +1,4 @@
-# Nuzhat Rubab Zahra — Portfolio
+# Nuzhat Rubab Zahra , Portfolio
 
 Modern, clean portfolio site positioning as **AI Engineer**: agentic AI, RAG, multi-LLM systems, and ML pipelines. Main showcase is AI engineering work; full-stack, automations, and other projects are in a separate “Other work” section at the bottom. Built with **Next.js 14** and **Tailwind CSS**.
 
@@ -22,9 +22,9 @@ npm start
 
 Screenshots are copied into `public/images/` from your project folders:
 
-- `public/images/carepropertyhub/` — Care Property Hub app & admin
-- `public/images/contentStrategist/` — AI Content Strategist UI
-- `public/images/PPFWebsite/` — PPF For Humanity
+- `public/images/carepropertyhub/` , Care Property Hub app & admin
+- `public/images/contentStrategist/` , AI Content Strategist UI
+- `public/images/PPFWebsite/` , PPF For Humanity
 
 To refresh images, copy from:
 
