@@ -11,22 +11,35 @@ const ROLES: {
   accent: string;
 }[] = [
   {
-    title: 'Lead Agentic AI Engineer & Full-Stack Developer',
-    company: 'BrandScaling (UK)',
-    companyVia: 'Global outsourcing Hub',
-    period: 'July 2025 – Present',
-    line: 'Agentic AI, Decision Intelligence Agent, automation.',
+    title: 'Agentic AI Forward Deployed Engineer',
+    company: 'VECTOR Inc.',
+    period: 'May 2026 – Present',
+    line: 'Hybrid · Islamabad. Deploying and shipping agentic AI systems.',
     accent: 'bg-orange-400',
   },
   {
-    title: 'Lead Full-Stack Developer',
-    company: 'Adminless (UK)',
-    companyVia: 'Global outsourcing Hub',
-    period: 'July 2025 – Present',
-    line: 'Care Property Hub, GHL CRM, dashboards.',
+    title: 'Lead Agentic AI Forward Deployed Engineer',
+    company: 'Brandscaling',
+    companyVia: 'GOH partner (UK)',
+    period: 'Sep 2025 – May 2026',
+    line: 'On-site · Islamabad. Built the Decision Intelligence Agent and related agentic systems.',
     accent: 'bg-violet-400',
   },
-  { title: 'AI Intern', company: 'NASTP', period: 'Jun, Aug 2024', line: 'Aerospace & tech park.', accent: 'bg-blue-400' },
+  {
+    title: 'Agentic AI & Automation Engineer',
+    company: 'GOH (Global Outsourcing Hub)',
+    companyVia: 'UK',
+    period: 'Jul 2025 – May 2026',
+    line: 'On-site · Islamabad. Intern → full-time. Agents and automation with code and no-code platforms.',
+    accent: 'bg-sky-400',
+  },
+  {
+    title: 'Artificial Intelligence Intern',
+    company: 'NASTP',
+    period: 'Jun 2024 – Aug 2024',
+    line: 'On-site · Rawalpindi. Aircraft and maps — aerospace science & technology park.',
+    accent: 'bg-blue-400',
+  },
 ];
 
 export function Experience() {
@@ -62,7 +75,7 @@ export function Experience() {
                     <>
                       <span className="hidden sm:inline"> </span>
                       <span className="mt-0.5 block text-zinc-500 sm:mt-0 sm:inline">
-                        by {role.companyVia}
+                        · {role.companyVia}
                       </span>
                     </>
                   ) : null}

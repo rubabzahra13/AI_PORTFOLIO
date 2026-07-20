@@ -144,7 +144,7 @@ export function Projects() {
   const otherData = groupByCategory(
     PROJECTS_OTHER,
     'Full-stack & web' satisfies OtherWorkCategory,
-    ['Automation', 'Full-stack & web', 'Non-profit & advocacy', 'E-commerce', 'Portfolio & 3D'] satisfies OtherWorkCategory[],
+    ['Full-stack & web', 'Automation', 'Non-profit & advocacy', 'E-commerce', 'Portfolio & 3D'] satisfies OtherWorkCategory[],
   );
 
   return (

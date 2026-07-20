@@ -19,11 +19,11 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Nuzhat Rubab Zahra | AI Engineer',
+  title: 'Nuzhat Rubab Zahra | Agentic AI FDE',
   description:
     'Portfolio of Nuzhat Rubab Zahra, AI Engineer. Agentic AI, RAG, multi-LLM systems, ML pipelines. Full-stack and automations in separate showcase.',
   openGraph: {
-    title: 'Nuzhat Rubab Zahra | AI Engineer',
+    title: 'Nuzhat Rubab Zahra | Agentic AI FDE',
     description: 'AI Engineer portfolio: agentic AI, RAG, multi-LLM systems. Decision Intelligence Agent, Content Strategy Agent, Video Transcription. Production AI that ships.',
   },
 };

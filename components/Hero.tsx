@@ -47,7 +47,7 @@ export function Hero() {
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 pt-12">
                   <p className="text-white font-semibold">Nuzhat Rubab Zahra</p>
-                  <p className="text-zinc-300 text-sm">AI Engineer</p>
+                  <p className="text-zinc-300 text-sm">Agentic AI Forward Deployed Engineer</p>
                 </div>
               </div>
             </div>

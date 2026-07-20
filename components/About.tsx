@@ -3,9 +3,9 @@
 import { RevealStagger } from '@/components/RevealStagger';
 
 const FOCUS = [
-  'Agentic AI & AI engineering at BrandScaling',
-  'Multi-LLM systems, RAG, and ML pipelines',
-  'Scaling AI prototypes to production',
+  'Agents embedded in real workflows',
+  'Grounded retrieval, multi-LLM routing, practical automation',
+  'Measurable paths from prototype to production',
 ];
 
 export function About() {
@@ -21,10 +21,10 @@ export function About() {
               About me
             </h2>
             <p className="text-zinc-400 leading-relaxed mb-4 text-sm sm:text-base">
-              I build AI systems that ship. Agentic AI, RAG pipelines, multi-LLM routing, and ML tooling, from research to production. I focus on grounding models in data, safe deployment, and clear evaluation so products are reliable and scalable.
+              I care less about flashy demos and more about agents that survive real data, real users, and real deadlines. The craft is in the glue: retrieval that stays honest, models that earn their slot, and evaluation that shows when something actually works.
             </p>
             <p className="text-zinc-400 leading-relaxed text-sm sm:text-base">
-              I lead AI engineering and agentic AI work at BrandScaling; I also do full-stack and automation work. Based in the twin cities.
+              I work close to the problem: shipping into live workflows, picking code or no-code when it saves time, and leaving systems teams can trust and maintain. Based in Islamabad / Rawalpindi.
             </p>
           </div>
           <div className="reveal-stagger-item glass-card rounded-xl p-4 sm:p-6">
