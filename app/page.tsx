@@ -4,6 +4,7 @@ import { EngineeringDesign } from '@/components/EngineeringDesign';
 import { Projects } from '@/components/Projects';
 import { About } from '@/components/About';
 import { Experience } from '@/components/Experience';
+import { Certifications } from '@/components/Certifications';
 import { Skills } from '@/components/Skills';
 import { Resume } from '@/components/Resume';
 import { Contact } from '@/components/Contact';
@@ -18,6 +19,7 @@ export default function Home() {
       <Reveal variant="left"><Projects /></Reveal>
       <Reveal variant="right"><About /></Reveal>
       <Reveal variant="scale"><Experience /></Reveal>
+      <Reveal variant="up"><Certifications /></Reveal>
       <Reveal variant="left"><Skills /></Reveal>
       <Reveal variant="blur"><Resume /></Reveal>
       <Reveal variant="up"><Contact /></Reveal>

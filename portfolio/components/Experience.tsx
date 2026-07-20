@@ -37,7 +37,7 @@ const ROLES: {
     title: 'Artificial Intelligence Intern',
     company: 'NASTP',
     period: 'Jun 2024 – Aug 2024',
-    line: 'On-site · Rawalpindi. Aircraft and maps — aerospace science & technology park.',
+    line: 'On-site · Rawalpindi. Aircraft and maps: aerospace science & technology park.',
     accent: 'bg-blue-400',
   },
 ];
