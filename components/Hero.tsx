@@ -29,13 +29,12 @@ export function Hero() {
         <div className="absolute bottom-1/3 left-1/4 w-80 h-80 rounded-full bg-violet-500/10 blur-[80px] animate-pulse" style={{ animationDelay: '1s' }} />
       </div>
       <div className="relative z-10 max-w-6xl mx-auto w-full">
-        {/* Mobile: stacked layout with guaranteed spacing; desktop: row */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 sm:gap-10 lg:gap-16">
-          {/* Image: second on mobile; clip blur so it never overlaps text below */}
+          {/* Portrait: clean circle, no text overlay */}
           <div className="order-2 lg:order-2 flex justify-center lg:justify-end shrink-0 relative z-0 hero-entrance hero-entrance-delay-2">
-            <div className="relative w-[200px] h-[200px] min-[375px]:w-[240px] min-[375px]:h-[240px] sm:w-[280px] sm:h-[280px] lg:w-[400px] lg:h-[400px] rounded-2xl overflow-hidden lg:overflow-visible">
-              <div className="absolute inset-0 lg:-inset-1 rounded-2xl bg-gradient-to-br from-orange-400/40 to-amber-600/40 blur-lg sm:blur-xl pointer-events-none hero-border-glow" aria-hidden />
-              <div className="relative size-full rounded-2xl overflow-hidden border border-zinc-700/50 hero-image-reveal">
+            <div className="relative w-[200px] h-[200px] min-[375px]:w-[240px] min-[375px]:h-[240px] sm:w-[280px] sm:h-[280px] lg:w-[400px] lg:h-[400px] rounded-full overflow-hidden lg:overflow-visible">
+              <div className="absolute inset-0 lg:-inset-1 rounded-full bg-gradient-to-br from-orange-400/40 to-amber-600/40 blur-lg sm:blur-xl pointer-events-none hero-border-glow" aria-hidden />
+              <div className="relative size-full rounded-full overflow-hidden border border-zinc-700/50 hero-image-reveal shadow-[0_0_0_1px_rgba(255,255,255,0.04)]">
                 <Image
                   src="/images/me/me.webp?v=hero"
                   alt="Nuzhat Rubab Zahra"
@@ -45,23 +44,29 @@ export function Hero() {
                   priority
                   sizes="(max-width: 1024px) 280px, 400px"
                 />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 pt-12">
-                  <p className="text-white font-semibold">Nuzhat Rubab Zahra</p>
-                  <p className="text-zinc-300 text-sm">Agentic AI Forward Deployed Engineer</p>
-                </div>
               </div>
             </div>
           </div>
 
-          {/* Headline, copy, CTAs, third on mobile; higher z-index so text always on top if overlap */}
-          <div className="order-3 lg:order-1 text-center lg:text-left lg:max-w-xl min-w-0 pt-12 sm:pt-16 lg:pt-0 relative z-10">
-            <h1 className="font-display text-3xl min-[480px]:text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-[1.2] tracking-tight">
-              <span className="hero-headline-line block">Building AI systems that</span>
-              <span className="hero-headline-line block"><span className="text-gradient">ship.</span></span>
-            </h1>
-            <p className="mt-4 sm:mt-6 text-zinc-400 text-base sm:text-lg leading-relaxed hero-entrance hero-entrance-delay-3">
+          {/* Identity + value prop */}
+          <div className="order-3 lg:order-1 text-center lg:text-left lg:max-w-xl min-w-0 relative z-10">
+            <div className="hero-entrance hero-entrance-delay-1">
+              <h1 className="font-display text-3xl min-[480px]:text-4xl sm:text-5xl md:text-[3.25rem] font-bold text-white tracking-tight leading-[1.1]">
+                Nuzhat Rubab Zahra
+              </h1>
+              <p className="mt-3 sm:mt-4 text-sm sm:text-[0.95rem] text-orange-300/85 font-medium tracking-[0.04em]">
+                Agentic AI Forward Deployed Engineer
+              </p>
+            </div>
+
+            <p className="mt-8 sm:mt-10 text-lg sm:text-xl md:text-2xl text-zinc-300 font-medium leading-snug tracking-tight hero-entrance hero-entrance-delay-2">
+              Building AI systems that <span className="text-gradient font-semibold">ship.</span>
+            </p>
+
+            <p className="mt-4 sm:mt-5 text-zinc-400 text-base sm:text-lg leading-relaxed hero-entrance hero-entrance-delay-3">
               Agentic AI, RAG, multi-LLM systems, and ML pipelines, from research to production. I design and ship AI products that scale.
             </p>
+
             <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 hero-entrance hero-entrance-delay-4">
               <a
                 href="#projects"
