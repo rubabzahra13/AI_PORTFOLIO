@@ -300,7 +300,7 @@ export const PROJECTS_FEATURED: (ProjectDetailData & { tags: string[]; showcase:
     ],
     tech: ['React', 'Tailwind CSS', 'Radix UI', 'React Leaflet (maps)', 'Component-driven UI', 'Figma'],
     links: [
-      { label: 'Live site', href: 'https://ppf-ngo-website.vercel.app/' },
+      { label: 'Live site', href: 'https://pakpalforum.com/' },
     ],
     images: [
       { src: '/images/PPFWebsite/ppf-screenshot.webp', alt: 'PPF For Humanity,  full page (Stand in Solidarity, mission, impact, get involved)', caption: 'English, dark theme,  hero, mission, impact & get involved' },
